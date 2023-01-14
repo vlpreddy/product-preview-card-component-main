@@ -1,0 +1,171 @@
+* {
+   margin:0px;
+   padding:0px;
+   border: 0px;
+   outline: 0px;
+}
+
+/*
+::root {
+}
+Instead of html we can also use this to make sure rem reflect all over
+*/
+
+html{
+    font-family:'Montserrat', serif;
+    font-size:3rem;
+
+    @media(min-width:350px) and (max-width:599px){
+        font-size:1.5rem;
+    }
+
+    @media(min-width:600px) and (max-width:999px){
+        font-size:2rem;
+    }
+
+    @media(min-width:1000px) and (max-width:1199px){
+        font-size:2.3rem;
+    }
+
+    @media(min-width:1200px) and (max-width:1440px){
+        font-size:3rem;
+    }
+
+    
+
+}
+
+body{
+    margin: 0.5rem 0.5rem;
+    background:hsl(30, 38%, 92%);
+    
+    @media(min-width:1400px){
+        margin: 2rem 2rem;
+    }
+
+}
+
+.container-wrap{
+    max-width: 1440px;
+    margin:auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media(max-width:800px){
+        grid-template-columns:1fr;
+    }
+}
+
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+    @media(min-width:600px) and (max-width:800px){
+        width:100%;
+        height: 400px;
+        object-position:top middle;
+    }
+
+    @media(min-width:350) and (max-width:599){
+        width:100%;
+        height: 500px;
+        object-position:middle;
+    }
+
+   
+}
+
+.box2{
+    padding:2rem;
+
+    >p:first-child{
+        font-size:0.8rem;
+        text-transform:uppercase;
+         letter-spacing: 0.3rem;
+         color:hsl(228, 12%, 48%);
+    }
+
+    h1{
+        font-family: 'Fraunces', serif;
+        font-size:1.5rem;
+        font-weight: 600;
+        color:hsl(212, 21%, 14%);
+    }
+
+    h1 + p {
+        font-size:0.7rem;
+        line-height: 1rem;
+    }
+  
+
+    .price{
+        font-family:'Fraunces', serif;
+        display:flex;
+        margin-top:0.5rem;
+        flex-wrap: wrap;
+        gap:1rem;
+        .orig-price {
+            font-size: 0.5rem;
+            align-self: center;
+            text-decoration: line-through;
+        }
+        .disc-price {
+            font-size: 1.4rem;
+            color:hsl(158, 36%, 37%);
+            font-weight: 600;
+
+        }
+
+    }
+
+    .button {
+        width: 100%;
+        height: 60px;
+        margin: 30px auto;
+        display: block;
+        height: 60px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: hsl(158, 36%, 37%);
+
+        
+    }
+
+    .button:hover{
+        background-color: hsl(158, 31%, 39%);;
+    }
+    .button:active{
+        background-color: hsl(158, 31%, 39%);;
+
+    }
+
+    .button_text,
+    .button_icon{
+        text-align: center;
+        padding: 0 4px;
+        color:white;
+        height: 100%;
+
+    }
+
+    .button_icon {
+        width:1.5rem;
+    }
+
+    .button_text{
+        font-size: 0.7rem;
+        align-self:stretch
+
+    }
+    
+    
+
+
+
+
+}

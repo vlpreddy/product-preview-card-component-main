@@ -1,0 +1,24 @@
+{
+  "name": "preview-card",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -o css scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlpreddy/frontend-mentor-challenge-3.git"
+  },
+  "keywords": [
+    "preview-card",
+    "fronend-mentor-challenge"
+  ],
+  "author": "engage@vLp.reddy.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlpreddy/frontend-mentor-challenge-3/issues"
+  },
+  "homepage": "https://github.com/vlpreddy/frontend-mentor-challenge-3#readme"
+}

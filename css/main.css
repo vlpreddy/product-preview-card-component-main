@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px; }
+
+/*
+::root {
+}
+Instead of html we can also use this to make sure rem reflect all over
+*/
+html {
+  font-family: 'Montserrat', serif;
+  font-size: 3rem; }
+  @media (min-width: 350px) and (max-width: 599px) {
+    html {
+      font-size: 1.5rem; } }
+  @media (min-width: 600px) and (max-width: 999px) {
+    html {
+      font-size: 2rem; } }
+  @media (min-width: 1000px) and (max-width: 1199px) {
+    html {
+      font-size: 2.3rem; } }
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    html {
+      font-size: 3rem; } }
+
+body {
+  margin: 0.5rem 0.5rem;
+  background: #f2ebe3; }
+  @media (min-width: 1400px) {
+    body {
+      margin: 2rem 2rem; } }
+
+.container-wrap {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden; }
+  @media (max-width: 800px) {
+    .container-wrap {
+      grid-template-columns: 1fr; } }
+
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  @media (min-width: 600px) and (max-width: 800px) {
+    .box1 img {
+      width: 100%;
+      height: 400px;
+      object-position: top middle; } }
+  @media (min-width: 350) and (max-width: 599) {
+    .box1 img {
+      width: 100%;
+      height: 500px;
+      object-position: middle; } }
+
+.box2 {
+  padding: 2rem; }
+  .box2 > p:first-child {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #6c7289; }
+  .box2 h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1c232b; }
+  .box2 h1 + p {
+    font-size: 0.7rem;
+    line-height: 1rem; }
+  .box2 .price {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .box2 .price .orig-price {
+      font-size: 0.5rem;
+      align-self: center;
+      text-decoration: line-through; }
+    .box2 .price .disc-price {
+      font-size: 1.4rem;
+      color: #3c8067;
+      font-weight: 600; }
+  .box2 .button {
+    width: 100%;
+    height: 60px;
+    margin: 30px auto;
+    display: block;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3c8067; }
+  .box2 .button:hover {
+    background-color: #45826c; }
+  .box2 .button:active {
+    background-color: #45826c; }
+  .box2 .button_text,
+  .box2 .button_icon {
+    text-align: center;
+    padding: 0 4px;
+    color: white;
+    height: 100%; }
+  .box2 .button_icon {
+    width: 1.5rem; }
+  .box2 .button_text {
+    font-size: 0.7rem;
+    align-self: stretch; }
